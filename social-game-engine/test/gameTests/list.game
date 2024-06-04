@@ -1,0 +1,17 @@
+=====
+Single Empty List
+=====
+
+configuration {
+  name: ""
+  player range: (0, 0)
+  audience: false
+  setup: {}
+}
+constants {
+  a: []
+}
+variables {}
+per-player {}
+per-audience {}
+rules {}

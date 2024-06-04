@@ -1,0 +1,17 @@
+=====
+All valid characters mixed
+=====
+
+configuration {
+  name: ""
+  player range: (0, 0)
+  audience: false
+  setup: {}
+}
+constants {
+  AbC__23: 0
+}
+variables {}
+per-player {}
+per-audience {}
+rules {}

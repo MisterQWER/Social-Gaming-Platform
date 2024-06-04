@@ -1,0 +1,46 @@
+// These are examples of core properties of a game that might be
+// configured when setting up an instance or lobby for a game.
+configuration {
+  name: "Rock, Paper, Scissors"
+  player range: (2, 4)
+  audience: false
+  setup: {
+    rounds {
+      kind: integer
+      prompt: "The number of rounds to play"
+      range: (1, 20)
+    }
+  }
+}
+
+// Global constants can be expressed in a JSON-like format.
+constants {
+  weapons: [
+    { name: "Rock",     beats: "Scissors" },
+    { name: "Paper",    beats: "Rock"     },
+    { name: "Scissors", beats: "Paper"    },
+  ]
+}
+
+// The same is true of the initial values for global variables.
+variables {
+  winners: []
+}
+
+// The per player state exists independently for each player, so
+// initializing `wins` below to 0 creates a counter for each player and
+// initializes it to 0.
+per-player {
+  wins: 0
+}
+
+// If there were some form of audience participation, the state for each
+// audience member could also be tracked separately. What sorts of
+// considerations might that imply for implementing it?
+per-audience {}
+
+// Finally, the rules of the game execute as previously described after the
+// game has been started.
+rules {
+  
+}

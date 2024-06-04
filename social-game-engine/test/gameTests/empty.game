@@ -1,0 +1,15 @@
+=====
+Empty Game
+=====
+
+configuration {
+  name: ""
+  player range: (0, 0)
+  audience: false
+  setup: {}
+}
+constants {}
+variables {}
+per-player {}
+per-audience {}
+rules {}
